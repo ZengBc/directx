@@ -1,8 +1,8 @@
 # directx
 ![Author](https://img.shields.io/badge/Author-ZengBc-da282a)
-|            |                                                              |         |
-| ---------- | ------------------------------------------------------------ | ------- |
-| WindowsAPI | Window Creation<br />~~Message Handling (Keyboard / Mouse)~~<br />~~Windows Class Architecture~~ | WinMain |
+| date       |                                                              |             |
+| ---------- | ------------------------------------------------------------ | ----------- |
+| 2022/09/17 | Window Creation<br />~~Message Handling (Keyboard / Mouse)~~<br />~~Windows Class Architecture~~ | WinMain.cpp |
 - Direct3D Pipeline Initialization
   - Direct3D Device / Swapchain
   - Render Target / Immediate Device Context
