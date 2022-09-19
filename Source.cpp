@@ -1,4 +1,4 @@
-#include "ErrorLogger.h"
+#include "Engine.h"
 #pragma comment(lib,"d3d11.lib")
 #pragma comment(lib,"DirectXTK.lib")
 
@@ -7,14 +7,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	_In_ LPWSTR lpCmdLind,
 	_In_ int nCmdShow)
 {
-	HRESULT hr = S_OK;
-	if (SUCCEEDED(hr))
+	Engine engine;
+	engine.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
+	while (engine.ProcessMessages() == true)
 	{
-		MessageBoxA(NULL, "SUCCESS", "SUCCESS", NULL);
-	}
-	if(FAILED(hr))
-	{
-		ErrorLogger::Log(hr, "FAILURE");
+
 	}
 	return 0;
 }
